@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+  <form action="./success.html" onsubmit="return validateMyForm()">
+    <div class="form">
+      <h1>Registration</h1>
+      <div class="container">
+        <div class="left">
+            <label for="f_name">FULL NAME</label>
+            <input type="text" name="fullname" id="f_name" placeholder="Enter Name"/>
+            <p class="error" id="errFname"></p>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email Address"/>
+            <p class="error" id="errMail"></p>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password"/>
+            <p class="error" id="errPassword"></p>
+          </div>
+          <div class="right">
+            <label for="u_name">USER NAME</label>
+            <input type="text" name="u_name" id="u_name" placeholder="Enter User Name"/>
+            <p class="error" id="errUserName"></p>
+            <label for="p_nember">PHONE NUMBER</label>
+            <input type="text" name="p_number" id="p_number" placeholder="Enter Phone Number"/>
+            <p class="error" id="errPhoneNumber"></p>
+            <label for="c_password">CONFIRM PASSWORD</label>
+            <input type="password" name="c_password" id="c_password" placeholder="Enter Password again"/>
+            <p class="error" id="errCpassword"></p>
+          </div>
+      </div>
+      <p>GENDER</p>
+      <input type="radio" name="gender" id="male" value="MALE" checked/>
+      <label for="male">MALE</label>
+      <input type="radio" name="gender" id="female" value="FEMALE" />
+      <label for="female">FEMALE</label>
+      <input type="radio" name="gender" id="others" value="OTHERS" />
+      <label for="others">OTHERS</label>
+      <input type="submit" value="REGISTER">
+    </div>
+  </form>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
